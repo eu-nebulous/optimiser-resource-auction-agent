@@ -8,6 +8,7 @@
       - nebulous-optimiser-resource-auction-agent-container-images
     description: Build the container images.
     files: &image_files
+      - ^zuul\.d/jobs\.yaml$
       - ^java-spring-boot-demo/
     vars: &image_vars
       promote_container_image_job: nebulous-optimiser-resource-auction-agent-upload-container-images
